@@ -1,0 +1,158 @@
+body {
+  background-color: white;
+  margin: 0;
+  padding: 1px;
+}
+
+main {
+  width: 1300px;
+}
+
+.right {
+  margin-left: 300px;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  color: rgb(98, 206, 98);
+}
+
+h2 {
+  font-size: 40px;
+  color: rgb(98, 206, 98);
+  font-style: oblique;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
+
+p {
+  font-size: 20px;
+}
+
+nav {
+  float: left;
+  width: 300px;
+  background-color: rgb(98, 206, 98);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation: mymove 5s infinite;
+}
+nav img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+nav hr {
+  width: 200px;
+  margin-right: 200px;
+  margin-bottom: 40px;
+}
+nav .navbar {
+  margin-left: 40px;
+}
+nav .navbar ul {
+  list-style-type: none;
+}
+nav .navbar li a {
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+}
+nav .navbar li a:hover {
+  color: rgb(31, 28, 28);
+}
+
+.slogan p {
+  text-align: center;
+  font-size: 25px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.Key_element {
+  display: flex;
+}
+.Key_element img {
+  margin-left: 30px;
+}
+.Key_element .first_paragraph p {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.first {
+  margin-left: 30px;
+}
+
+.second {
+  margin-left: 30px;
+}
+.second ol {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.third {
+  margin-left: 30px;
+}
+
+.fourth {
+  margin-left: 30px;
+}
+.fourth .dropbtn {
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.fourth .dropdown {
+  position: relative;
+  display: inline-block;
+}
+.fourth .dropdown-content {
+  display: none;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.fourth .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.fourth .dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+.fourth .dropdown:hover .dropdown-content {
+  display: block;
+}
+.fourth .dropdown:hover .dropbtn {
+  background-color: rgb(98, 206, 98);
+}
+.fourth input {
+  width: 70%;
+  height: 10vh;
+}
+.fourth .element_btn {
+  padding: 10px 40px;
+  margin-left: 20px;
+  background-color: rgb(98, 206, 98);
+  border-radius: 40px;
+}
+.fourth p a {
+  text-decoration: none;
+  color: rgb(98, 206, 98);
+}
+
+/*# sourceMappingURL=style.css.map */
