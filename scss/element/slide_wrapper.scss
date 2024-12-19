@@ -17,6 +17,7 @@
         }
     }
     @include respond-to("phone"){
+        width: 250px;
         margin: 0;
         margin-bottom: 20px;
         &:last-child{
@@ -27,6 +28,9 @@
         display: block;
         width: 300px;
         height: 300px;
+        @include respond-to("phone"){
+            max-width: 250px;
+        }
     }
     .content {
         background: rgb(202,202,202);
@@ -40,6 +44,9 @@
             font-size: 20px;
             margin-left: 80px;
             color: $primary_color;
+            @include respond-to("phone"){
+                margin-left: 50px;
+            }
             &:hover{
                 color: rgb(31, 28, 28);
             }
