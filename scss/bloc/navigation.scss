@@ -6,29 +6,97 @@ nav{
     position: fixed;
     top: 0;
     left: 0;
-    animation: mymove 5s infinite;
+    @include respond-to("Xlarge-size"){
+        max-width: 300px;
+    }
+    @include respond-to("large-size"){
+        max-width: 250px;
+    }
+    @include respond-to("tablette"){
+        max-width: 200px;
+    }
+    @include respond-to("phone"){
+        max-width: 150px;
+    }
     img{
-        width: 180px;
-        height: 180px;
+        width: 200px;
+        height: 200px;
         border-radius: 50%;
         margin-left: 50px;
         margin-top: 20px;
         margin-bottom: 30px;
+        @include respond-to("Xlarge-size"){
+            max-width: 170px;
+            height: 170px;
+        }
+        @include respond-to("large-size"){
+            max-width: 150px;
+            height: 150px;
+        }
+        @include respond-to("tablette"){
+            max-width: 100px;
+            height: 100px;
+        }
+        @include respond-to("phone"){
+            max-width: 70px;
+            height: 70px;
+            margin-left: 35px;
+        }
     }
     hr{
         width: 200px;
         margin-right: 200px;
         margin-bottom: 40px;
+        @include respond-to("Xlarge-size"){
+            max-width: 200px;
+        }
+        @include respond-to("large-size"){
+            max-width: 160px;
+        }
+        @include respond-to("tablette"){
+            max-width: 125px;
+        }
+        @include respond-to("phone"){
+            max-width: 70px;
+        }
     }
     .navbar{
         margin-left: 40px;
         ul{
             list-style-type: none;
+            @include respond-to("Xlarge-size"){
+                max-width: 200px;
+            }
+            @include respond-to("large-size"){
+                max-width: 200px;
+            }
+            @include respond-to("tablette"){
+                max-width: 200px;
+                padding: 0;
+            }
+            @include respond-to("phone"){
+                max-width: 200px;
+                padding: 0;
+            }
         }
         li a{
             text-decoration: none;
             font-size: 30px;
-            color: white;
+            color: rgb(231, 224, 224);
+            @include respond-to("Xlarge-size"){
+                font-size: 25px;
+            }
+            @include respond-to("large-size"){
+                font-size: 23px;
+            }
+            @include respond-to("tablette"){
+                font-size: 20px;
+                margin-left: 20px;
+            }
+            @include respond-to("phone"){
+                font-size: 15px;
+                margin: 0;
+            }
         }
         li a:hover {
             color: rgb(31, 28, 28);

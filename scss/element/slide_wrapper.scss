@@ -1,0 +1,49 @@
+.element-slide_wrapper {
+    display: inline-block;
+    width: 300px;
+    border : 2px solid $primary_color;
+    margin-left: 15px;
+    margin-bottom: 50px;
+    @include respond-to("Xlarge-size"){
+        margin-left: 80px;
+        &:last-child{
+            margin-left: 30%;
+        }
+    }
+    @include respond-to("large-size"){
+        margin-left: 30px;
+        &:last-child{
+            margin-left: 27%;
+        }
+    }
+    @include respond-to("phone"){
+        margin: 0;
+        margin-bottom: 20px;
+        &:last-child{
+            margin-left: 0px;
+        }
+    }
+    img {
+        display: block;
+        width: 300px;
+        height: 300px;
+    }
+    .content {
+        background: rgb(202,202,202);
+        width: 100%;
+        padding-bottom: 30px;
+        p {
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+            font-size: 20px;
+            margin-left: 80px;
+            color: $primary_color;
+            &:hover{
+                color: rgb(31, 28, 28);
+            }
+        }
+    }
+}
+

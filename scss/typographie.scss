@@ -2,16 +2,90 @@ h1 {
     font-size: 40px;
     text-align: center;
     color: $primary_color;
+    @include respond-to("Xlarge-size"){
+        max-width: 600px;
+        font-size: 35px;
+    }
+    @include respond-to("large-size"){
+        max-width: 500px;
+        font-size: 30px;
+    }
+    @include respond-to("tablette"){
+        max-width: 400px;
+        font-size: 25px;
+    }
+    @include respond-to("phone"){
+        max-width: 300px;
+        font-size: 20px;
+    }
 }
 h2{
     font-size: 40px;
     color: $primary_color;
     font-style: oblique;
+    text-align: center;
+    @include respond-to("Xlarge-size"){
+        max-width: 1000px;
+        font-size: 35px;
+    }
+    @include respond-to("large-size"){
+        max-width: 700px;
+        font-size: 30px;
+    }
+    @include respond-to("tablette"){
+        max-width: 700px;
+        font-size: 25px;
+    }
+    @include respond-to("phone"){
+        max-width: 500px;
+        font-size: 20px;
+    }
 }
 h3{
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
+    color: $primary_color;
+    text-align: center;
+    @include respond-to("Xlarge-size"){
+        max-width: 1000px;
+        font-size: 20px;
+    }
+    @include respond-to("large-size"){
+        max-width: 700px;
+        font-size: 18px;
+    }
+    @include respond-to("tablette"){
+        max-width: 700px;
+        font-size: 16px;
+    }
+    @include respond-to("phone"){
+        max-width: 350px;
+        font-size: 16px;
+    }
 }
 p{
     font-size: 20px;
+    color: black;
+    text-align: center;
+    @include respond-to("Xlarge-size"){
+        max-width: 900px;
+        font-size: 20px;
+    }
+    @include respond-to("large-size"){
+        max-width: 700px;
+        font-size: 20px;
+    }
+    @include respond-to("tablette"){
+        max-width: 700px;
+        font-size: 18px;
+    }
+    @include respond-to("phone"){
+        max-width: 400px;
+        font-size: 14px;
+    }
+}
+h4{
+    text-align: center;
+    color: $white;
+    font-size: 25px;
 }

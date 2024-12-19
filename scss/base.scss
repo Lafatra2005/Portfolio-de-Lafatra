@@ -1,11 +1,35 @@
 body{
-    background-color: white;
     margin: 0;
     padding: 1px;
+    background-color: $white;
 }
 main{
-    width: 1300px;
+    width: 1343px;
+    @include respond-to("Xlarge-size"){
+        max-width: 1234px;
+    }
+    @include respond-to("large-size"){
+        max-width: 1034px;
+    }
+    @include respond-to("tablette"){
+        max-width: 954px;
+      }
+      @include respond-to("phone"){
+        max-width: 476px;
+    }
 }
 .right{
     margin-left: 300px;
+    @include respond-to("Xlarge-size"){
+        margin-left: 300px;
+    }
+    @include respond-to("large-size"){
+        margin-left: 250px;
+    }
+    @include respond-to("tablette"){
+        margin-left: 200px;
+    }
+    @include respond-to("phone"){
+        margin-left: 120px;
+    }
 }

@@ -1,0 +1,22 @@
+@mixin respond-to($breakpoint){
+    @if  $breakpoint == "Xlarge-size"{
+        @media  screen and (max-width: $Xlarge-size) {
+            @content;
+        }
+    }
+    @else if  $breakpoint == "large-size"{
+        @media  screen and (max-width: $large-size) {
+            @content;
+        }
+    }
+    @else if  $breakpoint == "tablette"{
+        @media  screen and (max-width: $tablette) {
+            @content;
+        }
+    }
+    @else if  $breakpoint == "phone"{
+        @media  screen and (max-width: $phone) {
+            @content;
+        }
+    }
+}
